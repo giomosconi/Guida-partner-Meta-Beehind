@@ -112,6 +112,13 @@
     pointer-events:none;animation:fall linear forwards}
   @keyframes fall{to{transform:translateY(105vh) rotate(520deg);opacity:.85}}
 
+  .notice{display:flex;gap:14px;align-items:flex-start;background:var(--navy);
+    border-radius:10px;padding:17px 20px;margin-bottom:24px}
+  .notice .nbar{flex:0 0 4px;align-self:stretch;background:var(--mint);border-radius:99px}
+  .notice .nlabel{font-family:var(--mono);font-weight:700;font-size:.64rem;color:var(--mint);
+    text-transform:uppercase;letter-spacing:.18em;margin-bottom:6px}
+  .notice .ntext{color:#fff;font-size:.92rem;line-height:1.55;font-weight:500}
+  .notice .ntext strong{color:var(--mint);font-weight:700}
   @media (max-width:640px){
     .content{padding:30px 18px 36px}
   }
@@ -124,10 +131,17 @@
     <div class="eyebrow">Guida · Accesso come partner</div>
     <h1>Partner Meta in 6 mosse</h1>
     <div class="cbar"></div>
-    <div class="cover-sub">Bastano 2 minuti dal computer</div>
+    <div class="cover-sub">Da fare dal computer &middot; 2 minuti</div>
   </header>
 
   <main class="content">
+    <div class="notice">
+      <div class="nbar"></div>
+      <div>
+        <div class="nlabel">Importante &middot; solo da computer</div>
+        <div class="ntext">Fai questi passaggi da un <strong>computer</strong>. Dal telefono la voce &quot;Partner&quot; non compare.</div>
+      </div>
+    </div>
     <div class="progress">
       <div class="ptrack"><div class="pfill" id="fill"></div></div>
       <div class="pcount" id="count">0 / 6 completati</div>
